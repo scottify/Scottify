@@ -1,2 +1,2 @@
-scottify
+Repository for http://scottify.com
 ========
