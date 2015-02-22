@@ -1,10 +1,12 @@
 <footer id="footer" role="footer">
-	<div class="row">
-		<div class="columns col-12">
-			<p class="copyright">&copy; <?php echo date('Y'); ?> Scott Llewellyn.</p>
-			<?php include("elements/social_media.php"); ?>
-		</div>
-	</div>
+  <div class="row">
+    <div class="columns col-6">
+      <p class="copyright">&copy; <?php echo date('Y'); ?> Scott Llewellyn.</p>
+    </div>
+    <div class="columns col-6">
+      <?php include("elements/social_media.php"); ?>
+    </div>
+  </div>
 </footer>
 
 <!--[if lt IE 9]>
