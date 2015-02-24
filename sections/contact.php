@@ -1,6 +1,6 @@
 <section id="contact" class="section">
 	<div class="row">
-		<div class="columns col-12">
+		<div class="columns col-8 centered">
 			<h2>Want to say hello?</h2>
 			<p>Please feel free to get in touch with me anytime, whether it be for work, play or just to say hello.</p>
 			<a class="email" href="mailto:hello@scottify.com">Get in touch now</a>

@@ -1,6 +1,6 @@
 <section id="education" class="section">
 	<div class="row">
-		<div class="columns col-12">
+		<div class="columns col-8 centered">
 			<h2>Education</h2>
 			<article id="university" class="organisation">
 				<h3 class="title"><span class="date">2007 - 2011</span> University of the West of England (UWE)</h3>

@@ -1,6 +1,6 @@
 <section id="experience" class="section">
 	<div class="row">
-		<div class="columns col-12">
+		<div class="columns col-8 centered">
 			<h2>Experience</h2>
 			<article class="organisation work">
 				<h3 class="title"><span class="date">2012 - Present</span> THINK Digital</h3>
