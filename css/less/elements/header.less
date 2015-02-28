@@ -3,26 +3,60 @@
 \*------------------------------------------------------------------------*/
 
 header {
-	background: #263238;
-	padding: 40px 20px;
+	background: @header;
+	padding: 60px 0;
 	text-align: center;
 
 	.row {
-		color: #CFD8DC;
+
+		.logo {
+			height: 144px;
+			margin: 0 auto 40px;
+			width: 144px;
+
+			img {
+				.border-radius(144px);
+				.inline-block;
+				height: 100%;
+				width: 100%;
+			}
+
+		}
 
 		h1 {
 			color: @primary;
-			font-size: 48px;
-			line-height: 48px;
-			font-weight: normal;
-			margin: 0 0 24px;
+			font-size: 36px;
+			line-height: 36px;
+			margin: 0 0 40px;
+			text-transform: uppercase;
 		}
 
 		h2 {
 			color: @white;
-			font-size: 28px;
+			font-size: 24px;
+			line-height: 24px;
+			margin: 0 0 40px;
+		}
+
+		p {
+			color: #cfd8dc;
+			font-size: 18px;
+			font-style: italic;
 			line-height: 28px;
-			font-weight: normal;
+			padding: 0 80px;
+
+			a {
+
+				&:hover {
+					color: @white;
+				}
+
+			}
+
+			@media (max-width: @tablet-break) {
+				padding: 0;
+			}
+
 		}
 
 	}
