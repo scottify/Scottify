@@ -551,12 +551,15 @@ footer .row {
   font-size: 18px;
   line-height: 24px;
 }
+#work .row .columns.col-6 {
+  margin: 0 1%;
+}
 #work .row .columns.col-6:first-child {
-  margin: 0 4% 20px 1%;
+  margin: 0 4% 0 1%;
   width: 45%;
 }
 #work .slider {
-  padding: 35px 0 0;
+  margin: 35px 0 0;
 }
 #work .slider .slide h3 {
   color: #ec594e;
@@ -653,20 +656,25 @@ footer .row {
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
+  display: block;
 }
 #work .bx-wrapper {
   position: relative;
+  margin: 35px 0 0;
 }
-#work .bx-wrapper .bx-controls .bx-pager {
-  margin: 0 5px;
+#work .bx-wrapper .slider {
+  margin: 0;
+}
+#work .bx-wrapper .bx-controls {
+  height: 100%;
   position: absolute;
   right: 0;
-  top: -40px;
+  top: -75px;
   width: 100%;
 }
-#work .bx-wrapper .bx-controls .bx-pager .bx-pager-inner {
+#work .bx-wrapper .bx-controls .bx-pager {
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   position: relative;
   text-align: right;
   width: 1020px;
@@ -715,7 +723,6 @@ footer .row {
   font-size: 24px;
   height: 72px;
   line-height: 72px;
-  margin: -72px 0 0;
   position: absolute;
   text-align: center;
   text-decoration: none;
@@ -737,17 +744,73 @@ footer .row {
   background: #cfd6db;
 }
 /*------------------------------------------------------------------------*\
-	Code Section		: Beef Clients
-\*------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------*\
 	Code Section		: Think Digital Clients
 \*------------------------------------------------------------------------*/
-#think-digital {
+#clients {
   background: #f6f7f8;
+  padding: 30px 0 40px;
+}
+#clients .row .columns.col-2 {
+  line-height: 84px;
+  margin: 0 3% 20px 1%;
+  width: 12.66%;
+}
+#clients .row .columns.col-2:last-child {
+  margin: 0 1% 20px;
+  width: 14.66%;
+}
+#clients .row h2 {
+  color: #b0bec5;
+}
+#clients .row img {
+  max-height: 84px;
+  image-rendering: optimizeQuality;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  transform: rotate(0.0001deg);
+  vertical-align: middle;
+}
+#clients .row a {
+  display: block;
+}
+#clients .row a img:hover {
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  opacity: 0.75;
 }
 /*------------------------------------------------------------------------*\
 	Code Section		: Skills
 \*------------------------------------------------------------------------*/
+#skills {
+  background: #f6f7f8;
+  padding: 60px 0 10px;
+}
+#skills .row ul {
+  list-style: none;
+}
+#skills .row ul li {
+  background: url(../images/icons/icon_skill.png) no-repeat center left;
+  background-size: 16px 16px;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 5px;
+  padding: 0 0 0 28px;
+}
+#skills .row ul li:last-child {
+  margin: 0;
+}
+#skills .row ul li.title {
+  background: none;
+  color: #b0bec5;
+  font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0 0 20px;
+  min-height: 24px;
+  padding: 0;
+}
+#skills .row ul li.title strong {
+  font-weight: normal;
+}
 /*------------------------------------------------------------------------*\
 	Code Section		: Experience
 \*------------------------------------------------------------------------*/

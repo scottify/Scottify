@@ -5,5 +5,4 @@ $(document).ready(function() {
   		nextText: '&#xf054;',
   		prevText: '&#xf053;'
 	});
-	$('.bx-pager').wrapInner('<div class="bx-pager-inner"></div>');
 }); 

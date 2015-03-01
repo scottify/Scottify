@@ -8,11 +8,9 @@
 
 		<?php include("sections/featured_work.php"); ?>
 
-		<?php include("sections/think_digital_clients.php"); ?>
-
-		<?php include("sections/beef_clients.php"); ?>
-
 		<?php include("sections/skills.php"); ?>
+
+		<?php include("sections/clients.php"); ?>
 
 		<?php include("sections/experience.php"); ?>
 

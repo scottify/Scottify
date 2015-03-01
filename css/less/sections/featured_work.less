@@ -15,9 +15,10 @@
 		.columns {
 
 			&.col-6 {
+				margin: 0 1%;
 
 				&:first-child {
-					margin: 0 4% 20px 1%;
+					margin: 0 4% 0 1%;
 					width: 45%;
 				}
 
@@ -28,7 +29,7 @@
 	}
 
 	.slider {
-		padding: 35px 0 0;
+		margin: 35px 0 0;
 
 		.slide {
 
@@ -104,6 +105,7 @@
 
 				img {
 					.border-radius(3px 3px 0 0);
+					display: block;
 				}
 
 			}
@@ -114,23 +116,25 @@
 
 	.bx-wrapper {
 		position: relative;
+		margin: 35px 0 0;
+
+		.slider {
+			margin: 0;
+		}
 
 		.bx-controls {
+			height: 100%;
+			position: absolute;
+			right: 0;
+			top: -75px;
+			width: 100%;
 
 			.bx-pager {
-				margin: 0 5px;
-				position: absolute;
-				right: 0;
-				top: -40px;
-				width: 100%;
-
-    			.bx-pager-inner {
-    				margin: 0 auto;
-   					padding: 0 10px;
-   					position: relative;
-   					text-align: right;
-    				width: 1020px;
-    			}
+				margin: 0 auto;
+   				padding: 0 15px;
+   				position: relative;
+   				text-align: right;
+    			width: 1020px;
 	
 				.bx-pager-item {
 					.inline-block;
@@ -171,7 +175,6 @@
 					font-size: 24px;
 					height: 72px;
 					line-height: 72px;
-					margin: -72px 0 0;
 					position: absolute;
 					text-align: center;
 					text-decoration: none;
