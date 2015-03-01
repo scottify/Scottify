@@ -1,3 +1,206 @@
 /*------------------------------------------------------------------------*\
 	Code Section		: Featured Work
 \*------------------------------------------------------------------------*/
+
+#work {
+	padding: 80px 0 0;
+
+	.row {
+
+		h2 {
+			font-size: 18px;
+			line-height: 24px;
+		}
+
+		.columns {
+
+			&.col-6 {
+
+				&:first-child {
+					margin: 0 4% 20px 1%;
+					width: 45%;
+				}
+
+			}
+
+		}
+
+	}
+
+	.slider {
+		padding: 35px 0 0;
+
+		.slide {
+
+			h3 {
+				color: @primary;
+				font-size: 24px;
+				line-height: 30px;
+				margin: 40px 0 20px;
+			}
+
+			h4 {
+				color: #263238;
+				font-size: 18px;
+				line-height: 24px;
+				margin: 0 0 30px;
+			}
+
+			p {
+				font-style: italic;
+				margin: 0 0 25px;
+
+				&.note {
+					clear: both;
+					font-size: 12px;
+					line-height: 18px;
+					margin: 0 0 20px;
+				}
+
+			}
+
+			ul {
+				background: url(../images/icons/icon_skill.png) no-repeat top left;
+				background-size: 24px 24px;
+				color: @title;
+				.clearfix;
+				list-style: none;
+				margin: 0 0 20px;
+				padding: 0 0 0 36px;
+
+				li {
+					float: left;
+					margin: 0 5px 0 0;
+
+					&:last-child {
+						margin: 0;
+
+						&:after {
+							content: '';
+						}
+
+					}
+
+					&:after {
+						content: ',';
+					}
+
+				}
+
+			}
+
+			a {
+
+				&.button {
+					.button;
+					clear: both;
+					float: left;
+					margin: 10px 0 0;
+				}
+
+			}
+
+			.preview {
+
+				img {
+					.border-radius(3px 3px 0 0);
+				}
+
+			}
+
+		}
+
+	}
+
+	.bx-wrapper {
+		position: relative;
+
+		.bx-controls {
+
+			.bx-pager {
+				margin: 0 5px;
+				position: absolute;
+				right: 0;
+				top: -40px;
+				width: 100%;
+
+    			.bx-pager-inner {
+    				margin: 0 auto;
+   					padding: 0 10px;
+   					position: relative;
+   					text-align: right;
+    				width: 1020px;
+    			}
+	
+				.bx-pager-item {
+					.inline-block;
+					margin: 0 3px;
+	
+					a {
+						.image-replace;
+						background: #eceff1;
+						.border-radius(16px);
+						display: block;
+						height: 16px;
+						width: 16px;
+
+						&:last-child {
+							margin: 0 0 0 3px;
+						}
+
+						&:hover {
+							background: darken(#eceff1,10%);
+						}
+	
+						&.active {
+							background: @primary;
+						}
+	
+					}
+	
+				}
+	
+			}
+
+			.bx-controls-direction {
+	
+				a {
+					background: #eceff1;
+					color: @white;
+					.font-awesome;
+					font-size: 24px;
+					height: 72px;
+					line-height: 72px;
+					margin: -72px 0 0;
+					position: absolute;
+					text-align: center;
+					text-decoration: none;
+					top: 50%;
+					vertical-align: middle;
+					width: 42px;
+	
+					&.bx-prev {
+						left: 0;
+						padding: 0 0 0 10px;
+						text-align: left;
+					}
+	
+					&.bx-next {
+						right: 0;
+						padding: 0 10px 0 0;
+						text-align: right;
+					}
+
+					&:hover {
+						background: darken(#eceff1,10%);
+					}
+	
+				}
+	
+			}
+
+		}
+
+	}
+
+}

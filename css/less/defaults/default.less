@@ -22,6 +22,7 @@ body {
 }
 
 .row {
+	color: @paragraph;
 	font-size: 16px;
 	line-height: 24px;
 	word-spacing: auto;
@@ -31,11 +32,29 @@ body {
 	text-rendering: optimizeLegibility; 
 
 	h1, h2, h3, h4, h5, h6 {
+		color: @title;
+		font-weight: normal;
 		font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+
+		&.subtitle {
+			color: @subtitle;
+		}
+
+	}
+
+	img {
+		border: none;
+		height: auto;
+	  	max-width: 100%;
 	}
 
 	a {
 		color: inherit;
+
+		&:hover {
+			color: darken(@paragraph,20%);
+		}
+
 	}
 
 }
