@@ -7,7 +7,7 @@
 	<main role="main" id="main">
 		<?php include("sections/banner.php"); ?>
 		<?php include("sections/profile.php"); ?>
-		<?php include("sections/featured_projects.php"); ?>
+		<?php include("sections/featured_project.php"); ?>
 		<?php include("sections/interests.php"); ?>
 	</main>
 

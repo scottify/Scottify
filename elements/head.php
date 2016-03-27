@@ -69,7 +69,8 @@ var ua = navigator.userAgent,
     <!-- eo:favicon -->
 
     <!-- so:stylesheets -->
-	<link href="css/global.css" media="print,screen,tv,projection" rel="stylesheet" type="text/css" /><!--<![endif]-->
+	<link href="css/global.css" media="all" rel="stylesheet" type="text/css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
     <!-- eo:stylesheets --> 
 
 </head>

@@ -1,9 +1,19 @@
 <header id="header" role="header">
-	<div class="row">
-		<div class="columns col-12">
-			<div class="logo">
-				<img src="images/avatar.jpg" alt="Scott Llewellyn" title="Scott Llewellyn" />
-			</div>
-		</div>
-	</div>
+	<nav>
+		<ul class="nav-list">
+			<li class="logo"></li>
+			<li class="nav-item home">
+				<a href="/">Home</a>
+			</li>
+			<li class="nav-item work divider">
+				<a href="/work">Work</a>
+			</li>
+			<li class="nav-item blog divider">
+				<a href="/blog">Blog</a>
+			</li>
+			<li class="nav-item cv">
+				<a href="/" class="button">CV</a>
+			</li>
+		</ul>
+	</nav>
 </header>
