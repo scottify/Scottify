@@ -18,7 +18,16 @@ var ua = navigator.userAgent,
 
 <head>
 
-	<title>Scott Llewellyn | Front End Developer, Visual Designer and all round Geek.</title>
+	<?php $page = basename($_SERVER['REQUEST_URI']); 
+	if ($page == 'index' || $page == "/" || $page == '') {
+		$title = 'Home';
+	} else if ($page == 'work' || $page == "/" || $page == '') {
+		$title = 'Work';
+	} else {
+		$title = 'Scott Llewellyn';
+	} ?>
+
+	<title><?php echo $title ?></title>
 
 	<!-- so:meta -->
 	<meta charset="utf-8">
@@ -31,7 +40,7 @@ var ua = navigator.userAgent,
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="Currently working as part of a remote team for THINK Digital, specialising in designing and building interesting and worthwhile projects for nonprofit organisations around the world." />
     <meta name="author" content="Scott Llewellyn" />
-    <meta name="copyright" content="<?php echo date('Y'); ?>, Scott Llewellyn" />
+    <meta name="copyright" content="2016, Scott Llewellyn" />
     <meta name="Geo.Country" content="GB" />
     <meta name="Geo.Region" content="GB-BST" />
     <meta itemprop="name" content="Scott Llewellyn | Front End Developer, Visual Designer and all round Geek.">
