@@ -666,7 +666,6 @@ footer .row {
   margin: 0;
 }
 #work .bx-wrapper .bx-controls {
-  height: 100%;
   position: absolute;
   right: 0;
   top: -75px;
@@ -726,7 +725,7 @@ footer .row {
   position: absolute;
   text-align: center;
   text-decoration: none;
-  top: 50%;
+  margin: 18% 0 0;
   vertical-align: middle;
   width: 42px;
 }
