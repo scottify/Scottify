@@ -3,5 +3,81 @@
 \*------------------------------------------------------------------------*/
 
 #interests {
-	
+	background: @white;
+	padding: 60px 40px 12px;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+
+	h2 {
+		font-size: 24px;
+		margin: 0 0 48px;
+	}
+
+	.interest-list {
+		.clearfix;
+
+		.interest {
+			float: left;
+			margin: 0 0 48px;
+			position: relative;
+			width: 25%;
+
+			.icon {
+				background: @panel;
+				.border-radius(64px);
+				.inline-block;
+				font-size: 24px;
+				height: 64px;
+				line-height: 64px;
+				margin: 0 0 18px;
+				width: 64px;
+			}
+
+			h3 {
+				color: @paragraph;
+				font-family: 'montserratregular';
+			}
+
+			.popup {
+				font-size: 12px;
+				.border-radius(3px);
+				background: darken(@panel,5%);
+				margin: 20px auto 0;
+				padding: 12px 20px;
+				position: absolute;
+				.opacity(0);
+				.transition(all 300ms linear 0s);
+				visibility: hidden;
+				width: 100%;
+				z-index: 2;
+
+				&:after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: -8px;
+					left: (50%-4px);
+					width: 0;
+					border-width: 0 8px 8px;
+					border-style: solid;
+					border-color: darken(@panel,5%) transparent;
+				}
+
+			}
+
+			&:hover {
+				cursor: pointer;
+
+				.popup {
+					.opacity(1);
+					visibility: visible;
+				}
+
+			}
+
+		}
+
+	}
+
 }

@@ -2,6 +2,33 @@
 	Code Section		: Footer
 \*------------------------------------------------------------------------*/
 
-footer {
+#footer {
+	background: @white;
+	padding: 25px 40px;
+
+	.columns.col-6 {
+		float: right;
+		width: 49%;
+
+		&:first-child {
+			margin-right: 0;
+		}
+
+		&:last-child {
+			margin-left: 0;
+		}
+
+		@media (max-width: @tablet-break) { 
+			float: none;
+			margin: 0 0 20px;
+			width: 100%;
+
+			&:last-child {
+				margin: 0;
+			}
+
+		}
+
+	}
 
 }

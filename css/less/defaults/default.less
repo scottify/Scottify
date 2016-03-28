@@ -11,20 +11,13 @@ html {
 }
 		
 body {
-	font-family: 'Georgia', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-	background: white;
-	overflow: hidden;
-	
-	.font-icon, .tooltipster-icon { 
-		.font-awesome();
-	}
-	
-}
-
-.row {
+	background: @panel;
+	overflow: hidden;	
 	color: @paragraph;
+	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 	font-size: 16px;
 	line-height: 24px;
+	overflow: hidden;	
 	word-spacing: auto;
 	word-wrap: break-word;
 	-webkit-font-smoothing: antialiased;
@@ -34,7 +27,7 @@ body {
 	h1, h2, h3, h4, h5, h6 {
 		color: @title;
 		font-weight: normal;
-		font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+		font-family: 'montserratbold', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
 
 		&.subtitle {
 			color: @subtitle;

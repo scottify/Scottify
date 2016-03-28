@@ -2,6 +2,181 @@
 	Code Section		: Header
 \*------------------------------------------------------------------------*/
 
-header {
+#header {
+	background: @white;
+	padding: 20px 40px;
+
+	@media (max-width: @tablet-break) {
+		padding: 20px 0;
+	}
+
+	.logo {
+		float: left;
+
+		a {
+			background: url(../images/avatar.jpg) no-repeat;
+			background-size: 100% 100%;
+			.border-radius(5px);
+			display: block;
+			.image-replace;
+			height: 48px;
+			width: 48px;
+		}
+
+		@media (max-width: @tablet-break) {
+			margin: 0 40px;
+		}
+
+	}
+
+	.toggle {
+		cursor: pointer;
+		float: right;
+		margin: 12px 0;
+		padding: 10px 35px 16px 0px;
+		position: relative;
+
+		span, span:before, span:after {
+			background: @paragraph;
+			border-radius: 1px;
+			content: '';
+			cursor: pointer;
+			display: block;
+			height: 5px;
+			position: absolute;
+			.transition(all 300ms linear 0s);
+			width: 35px;
+		}
+
+		span:before {
+			top: -10px; 
+		}
+
+		span:after {
+			bottom: -10px;
+		}
+
+		&.active {
+
+			span {
+			  background-color: transparent;
+			}
+
+			span:before, span:after {
+			  top: 0;
+			}
+
+			span:before {
+			  transform: rotate(45deg);
+			}
+
+			span:after {
+			  transform: rotate(-45deg);
+			}
+
+		}
+
+		@media (min-width: @tablet-break) {
+			display: none;
+		}
+
+		@media (max-width: @tablet-break) {
+			margin: 12px 40px 0;
+		}
+	}
+
+	.nav-list {
+		display: block;
+		float: right;
+		margin: 16px 0 0;
+
+		li {
+			float: left;
+			padding: 0 20px;
+			line-height: 16px;
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			a {
+				display: block;
+				text-decoration: none;
+			}
+
+			@media (min-width: @tablet-break) {
+
+				&.divider {
+					border-left: 1px solid @panel;
+				}
+
+				.button {
+					display: block;
+					background: @panel;
+					padding: 12px 40px;
+					margin: -12px;
+			
+					&:hover {
+						background: darken(@panel,5%);
+					}
+
+				}
+
+			}
+
+		}
+
+		@media (max-width: @tablet-break) {
+			clear: both;
+			display: none;
+			float: none;
+			margin: 0;
+			position: relative;
+			top: 25px;
+			width: 100%;
+
+			li {
+				border-bottom: 1px solid @white;
+				float: left;
+				padding: 0;
+				width: 50%;
+
+				a {
+					background: @panel;
+					padding: 15px 40px;
+
+					&:hover {
+						background: darken(@panel,5%);
+					}
+
+				}
+
+				&:nth-child(odd) {
+					border-right: 1px solid @white;
+				}
+
+				&:nth-last-child(1), &:nth-last-child(2) {
+					border-bottom: none;
+				}
+
+			}
+
+		}
+
+		@media (max-width: @mobile-break) {
+		
+			li {
+				float: none;
+				width: 100%;
+
+				&:nth-last-child(2) {
+					border-bottom: 1px solid @white;
+				}
+
+			}
+
+		}
+
+	}
 
 }

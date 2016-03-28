@@ -3,5 +3,55 @@
 \*------------------------------------------------------------------------*/
 
 #banner {
+	background: @black;
+	height: 380px;
+	line-height: 380px;
+	padding: 0 40px;
+	text-align: center;
+	width: 100%;
+
+	@media (max-width: @mobile-break) {
+		padding: 0 80px;
+	}
+
+	@media (max-width: @mobile-break) {
+		height: auto;
+		line-height: 24px;
+		padding: 60px 40px;
+	}
+
+	article {
+		.inline-block;
+		vertical-align: middle;
+		line-height: normal;  
+
+		h2 {
+			color: @white;
+			font-size: 36px;
+			line-height: 42px;
+			margin: 0 0 12px;
+		}
+
+		h3 {
+			color: @white;
+			font-size: 18px;
+			line-height: 24px;
+			margin: 0 0 24px;
+		}
+
+		.button {
+			color: @title;
+			.inline-block;
+			background: @panel;
+			padding: 15px 40px;
+			text-decoration: none;
+		
+			&:hover {
+				background: darken(@panel,5%);
+			}
+
+		}
+
+	}
 
 }

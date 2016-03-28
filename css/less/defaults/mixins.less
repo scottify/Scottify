@@ -1,52 +1,8 @@
 /*------------------------------------------------------------------------*\
-	Code Section		: Mixins
-\*------------------------------------------------------------------------*/
-
-/* Font */
-
-.font-awesome() {
-	font-family: 'FontAwesome', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-/*------------------------------------------------------------------------*\
 	Code Section		: Style Mixins
 \*------------------------------------------------------------------------*/
 
-.overlay (@startColor: rgba(0,0,0,0), @endColor: rgba(0,0,0,0.8)) {
-	background-color: @startColor;
-	background: -webkit-gradient(linear, left top, left bottom, from(@startColor) 20%, to(@endColor) 80%);
-	background: -webkit-linear-gradient(top, @startColor 20%, @endColor) 80%;
-	background: -moz-linear-gradient(top, @startColor 20%, @endColor) 80%;
-	background: -ms-linear-gradient(top, @startColor 20%, @endColor) 80%;
-	background: -o-linear-gradient(top, @startColor 20%, @endColor) 80%;
-}
 
-.button {
-	background: @primary;
-	.border-radius(3px);
-	.box-shadow (0 2px 0 0 darken(@primary,15%));
-	color: @white;
-	.inline-block;
-	font-family: 'montserratregular', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
-	font-size: 18px;
-	font-style: normal;
-	line-height: 18px;
-	padding: 18px 40px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-
-	&:hover {
-		background: darken(@primary,10%);
-		.box-shadow (0 2px 0 0 darken(@primary,20%));
-	}
-
-	&:active, &:focus, &:target {
-		position: relative;
-		top: 2px;
-	}
-
-}
 
 /*------------------------------------------------------------------------*\
 	Code Section		: Layout Mixins

@@ -1,11 +1,9 @@
 <footer id="footer" role="footer">
-  <div class="row">
-    <div class="columns col-6">
-      <p class="copyright">&copy; 2016 Scott Llewellyn.</p>
-    </div>
-    <div class="columns col-6">
-      <?php include("elements/social.php"); ?>
-    </div>
+  <div class="columns col-6">
+    <?php include("elements/social.php"); ?>
+  </div>
+  <div class="columns col-6">
+    <p class="copyright">&copy; 2016 Scott Llewellyn.</p>
   </div>
 </footer>
 

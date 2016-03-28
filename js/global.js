@@ -1,8 +1,10 @@
 $(document).ready(function() {
-	$('.slider').bxSlider({
-  		speed: 700,
-  		infiniteLoop: true,
-  		nextText: '&#xf054;',
-  		prevText: '&#xf053;'
-	});
+
+	// Mobile Navigation
+
+	$('.toggle').click(function () {
+		$(this).toggleClass('active');
+		$('.nav-list').slideToggle(300);
+	}); 
+
 }); 
